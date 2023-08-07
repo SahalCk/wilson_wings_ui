@@ -1,5 +1,5 @@
 import 'package:flip_card/flip_card.dart';
-import 'package:flutter/material.dart';
+
 import 'package:flutter_neumorphic_plus/flutter_neumorphic.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:wilson_wings_ui/utils/colors.dart';
@@ -16,7 +16,7 @@ class WilsonFlippingCard extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(Adaptive.h(2.7)),
             width: Adaptive.w(75),
-            height: Adaptive.h(23.5),
+            height: Adaptive.h(25),
             decoration: const BoxDecoration(
                 gradient: LinearGradient(colors: [
                   Color.fromARGB(255, 127, 160, 255),
@@ -82,7 +82,9 @@ class WilsonFlippingCard extends StatelessWidget {
                     const Icon(Icons.remove_red_eye, color: Colors.white)
                   ],
                 ),
-                sizedBoxHeight10,
+                SizedBox(
+                  height: Adaptive.h(0.8),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -98,7 +100,7 @@ class WilsonFlippingCard extends StatelessWidget {
                                   const Color.fromARGB(255, 67, 42, 180)),
                           child: const Text('ADD MONEY',
                               style: TextStyle(
-                                  fontSize: 13,
+                                  fontSize: 12,
                                   letterSpacing: 1,
                                   fontWeight: FontWeight.bold))),
                     ),
@@ -113,7 +115,7 @@ class WilsonFlippingCard extends StatelessWidget {
                               backgroundColor: Colors.white),
                           child: const Text('ACC DETAILS',
                               style: TextStyle(
-                                  fontSize: 13,
+                                  fontSize: 12,
                                   color: Color.fromARGB(255, 67, 42, 180),
                                   letterSpacing: 1,
                                   fontWeight: FontWeight.bold))),
